@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Library</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lily Library</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#catalog">Catalog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to the Lily Library</h2>
+            <p>We offer a vast collection of books, magazines, and digital resources to meet your learning and research needs.</p>
+            <button onclick="scrollToSection('services')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Book Lending</h3>
+                <p>You can easily borrow from our extensive collection of books.</p>
+            </div>
+            <div class="service">
+                <h3>Reading Rooms</h3>
+                <p>Comfortable reading rooms with full facilities to support your reading activities.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Resources</h3>
+                <p>Access a wide range of e-books, journals, and databases from anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog">
+        <div class="container">
+            <h2>Catalog</h2>
+            <p>Explore our catalog to find books, magazines, and other resources available for lending.</p>
+            <button onclick="scrollToSection('contact')">Get In Touch</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lily Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
